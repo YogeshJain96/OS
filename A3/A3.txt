@@ -1,12 +1,14 @@
-1.Write a script to perform the following
-a) To count no.of processes which are running or ready in the system (Hint:- ps -e
--o pid,ppid,cmd,stat, grep )
+1.Write a script to perform the following:
+
+a) To count no.of processes which are running or ready in the system (Hint:- ps -e -o pid,ppid,cmd,stat, grep )
+> ps -e -o pid,ppid,cmd,stat
+
 b) List out foreground processes running in the system (ps suffix + in the state for
 the foreground processes)
+> ps -e -o pid,ppid,cmd,stat | grep -e +
+
 c) List out all processes whose parent is init
-
-
-
+> ps -e -o ppid,cmd | grep ‘^  *0’
 
 2.WRITE A MENU BASED SCRIPT TO PERFORM FOLLOWING STRING OPERATIONS
 A) TO FIND LENGTH OF A STRING
