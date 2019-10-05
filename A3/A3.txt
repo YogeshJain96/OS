@@ -1,7 +1,7 @@
 1.Write a script to perform the following:
 
 a) To count no.of processes which are running or ready in the system (Hint:- ps -e -o pid,ppid,cmd,stat, grep )
-> ps -e -o pid,ppid,cmd,stat
+> ps -e | wc -l
 
 b) List out foreground processes running in the system (ps suffix + in the state for
 the foreground processes)
