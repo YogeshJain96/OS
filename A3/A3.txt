@@ -8,7 +8,7 @@ the foreground processes)
 > ps -e -o pid,ppid,cmd,stat | grep -e +
 
 c) List out all processes whose parent is init
-> ps -e -o ppid,cmd | grep ‘^  *0$’
+> ps -e -o ppid | grep '^  *0$'
 
 2.WRITE A MENU BASED SCRIPT TO PERFORM FOLLOWING STRING OPERATIONS
 A) TO FIND LENGTH OF A STRING
